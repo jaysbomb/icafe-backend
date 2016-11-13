@@ -6,7 +6,7 @@ var path = require('path'),
 module.exports = {
     // development configuration
     development: {
-        db: 'mongodb://localhost/wom_dev',
+        db: 'mongodb://<dbuser>:<dbpassword>@ds151927.mlab.com:51927/heroku_w0m1dj5t',
         root: rootPath,
         app: {
             name: 'wom | Development',
