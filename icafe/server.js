@@ -41,7 +41,7 @@ require('./config/routes')(router, passport);
 
 require('./config/koa')(app, router, config);
 
-var port = process.argv[2] || config.app.port || 1337;
+var port = process.env.PORT || 1337;
 app.listen(port, function() {
     console.log('Server started on port ' + port);
 });
